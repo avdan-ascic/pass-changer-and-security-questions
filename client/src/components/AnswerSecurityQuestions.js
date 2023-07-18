@@ -119,7 +119,7 @@ const AnswerSecurityQuestions = ({ findEmail, setFindEmail }) => {
         setError(data.error);
       } else {
         setError("");
-        navigate("/updatePassword");
+        navigate("/resetPassword");
       }
     } catch (err) {
       console.log(err);

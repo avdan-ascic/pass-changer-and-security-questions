@@ -18,7 +18,6 @@ export const create = async (user) => {
     );
     return response.data;
   } catch (err) {
-    console.log(err);
     return err.response.data.errors ? err.response.data : err;
   }
 };
@@ -69,6 +68,7 @@ export const changePassword = async (user) => {
     );
     return response.data;
   } catch (err) {
+    console.log(err);
     return err.response.data;
   }
 };
